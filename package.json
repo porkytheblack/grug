@@ -1,0 +1,12 @@
+{
+  "name": "grug",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/porkytheblack/grug.git",
+  "author": "porkytheblack <porkytheblack@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ]
+}

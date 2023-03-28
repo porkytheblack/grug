@@ -1,0 +1,4 @@
+{
+    "/api/*": "/$1",
+    "/vehicles?page=:page&size=:size&user_id=:user_id": "/vehicles?_page=:page&_limit=:size&user_id=:user_id"
+}
