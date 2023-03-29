@@ -1,0 +1,38 @@
+{
+  "name": "next-with-custom-scripts",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "generate-mock": "babel-node --extensions \".ts\" mock/generate.ts"
+  },
+  "dependencies": {
+    "@types/node": "18.15.11",
+    "@types/react": "18.0.31",
+    "@types/react-dom": "18.0.11",
+    "babel-node": "^0.0.1-security",
+    "eslint": "8.37.0",
+    "eslint-config-next": "13.2.4",
+    "global": "^4.4.0",
+    "next": "13.2.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "5.0.2"
+  },
+  "devDependencies": {
+    "@anatine/zod-mock": "^3.10.0",
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.3",
+    "@babel/plugin-transform-runtime": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-typescript": "^7.21.0",
+    "@babel/runtime": "^7.21.0",
+    "@faker-js/faker": "^7.6.0",
+    "babel-node": "^0.0.1-security",
+    "ts-node": "^10.9.1",
+    "zod": "^3.21.4"
+  }
+}
