@@ -1,0 +1,19 @@
+{
+  "name": "chat-4",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^18.15.11",
+    "chalk": "^5.2.0",
+    "dotenv": "^16.0.3",
+    "openai": "^3.2.1",
+    "ts-node": "^10.9.1"
+  },
+  "scripts": {
+    "prompt": "ts-node index.ts"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0"
+  }
+}
