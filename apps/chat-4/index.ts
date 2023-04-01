@@ -41,8 +41,8 @@ const theGptStuff = (the_question: string): Promise<{answer?: string}> => new Pr
     openai.createCompletion({
         model: 'text-davinci-003',
         prompt: `
-           Anser this question::
-           ${the_question}
+            Answer this if its a question, else just answer with something appropriate:: 
+            ${the_question}
         `,
         max_tokens: 300,
         n: 1,
@@ -63,8 +63,8 @@ const theGptStuff = (the_question: string): Promise<{answer?: string}> => new Pr
 
 
 const promptMachine = async () => {
-    console.log("Hey from prompter 1.0.0\n")
-    await customReadline("You Fuck Face::").then(({answer, rl})=>{
+    
+    await customReadline(chalk.white.bgYellow("You::")).then(({answer, rl})=>{
         rl.close()
         theGptStuff(answer).then(({answer})=>{
             console.log("GPT-4::", chalk.blue(answer))
@@ -76,5 +76,6 @@ const promptMachine = async () => {
     })
 }
 
+console.log("Hey from prompter 1.0.0\n")
 promptMachine()
 
